@@ -1,12 +1,14 @@
 version: 2.1
 jobs:
-  build:
+ build:
     docker:
-      - image: circleci/python:3.7
+      - image: circleci/python:3.11.4
 working_directory: ~/pythonProject
 steps:
+  #obtain repo from github
   - checkout
--run:
+  #create virtual environment and install dependencies
+- run:
   name: install dependencies
   command: |
     python3 -m venv venv
