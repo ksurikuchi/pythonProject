@@ -1,1 +1,2 @@
-print(eval(input("Enter:")))
+#calculator
+print(eval(input("Enter:"))) 
